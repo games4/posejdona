@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Посейдона - туристический городок в Аризоне, с прекрасными видоми на Большой каньйон</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -48,7 +49,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-box">
+        <fieldset class="filters-box">
           <legend>Тип жилья:</legend>
           <ul>
             <li class="filter-option">
@@ -65,23 +66,40 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-range">
-          <legend class="filter-range-title">Стоимость в сутки (р):</legend>
-            <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        <fieldset class="filter-range filter-range__fieldset">
+          <legend class="filter-range-title filter-range-title__legend">Стоимость в сутки (р):</legend>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
-            <button class="btn-transparent" type="submit">Показать</button>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </fieldset>
       </form>
       
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+      </form>
       
     </main>
     
